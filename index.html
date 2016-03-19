@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+ <head>
+   <title>My page</title>
+   <meta charset="utf-8">
+   <style type="text/css">
+  body {
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1860px;
+  background-color: rgba(180, 215, 255, 0.3);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+
+}
+header {  
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  background-image: linear-gradient(180deg, rgba(0, 2, 19, 0.8), rgba(75, 25, 124, 0.3));    
+  color: rgb(248, 255, 255);
+  margin-top: -15px; 
+  box-shadow: 0 0 10px rgba(0,0,0,0.7) inset;
+  border-bottom: 2px rgb(85, 138, 187) solid;
+}
+footer {
+  border-top: 2px rgb(85, 138, 187) solid;
+  display: block;
+  height: 50px;
+  background-image: linear-gradient(180deg, rgba(10, 11, 24, 0.8), rgba(217, 228, 214, 0.3));
+}
+.general .info {
+  margin: 20px;
+  padding: 20px;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+h3 {
+  font-size: 20px;
+}
+.general {
+  margin-left: 50px;
+  margin-right: 50px;
+
+}
+.info {
+  padding-left: 30px;
+  padding-right: 20px;
+  border-left: 2px rgb(85, 138, 187) solid;
+  background-color: rgb(221, 228, 233);
+}
+img {
+  border-radius: 100px;
+  margin-top: 50px;
+  width:110%;
+  height:80%;
+}
+header > h1 {
+  text-align: center;
+  margin-bottom: 5px;
+  padding-top: 5px;
+} 
+header > h3 {
+ text-align: center;
+ margin-top: 0;
+}
+.info > h2, .general > h3 {
+display: inline-block;
+background-color: #27ae60;
+padding: 5px;
+border-radius: 5px;
+color:#fff;
+margin: 10px 0 auto;
+}
+.general > h3 {
+  display: block;
+}
+.info h3 {
+  display: inline-block;
+  border-radius: 5px;
+  border:#aaa solid 1px;
+  background-color: #fff;
+  padding: 5px;
+  margin: 5px 0 auto;
+}
+.general ul > ol {
+  padding-left: 15px;
+  padding: 5px;
+}
+a { 
+  text-decoration: none;
+  color:#C46B1D;
+}
+a:hover {
+   text-decoration: underline;
+}
+.general > .reference {
+   display:inline-block;
+   margin: 0 10px 10px;
+   background-color: #34495E;
+}
+.reference a {
+   color: #fff;
+   text-decoration: none;
+}
+.reference:hover, .reference:focus {
+  background-color: #4E6D8D;
+}
+@media print {
+body {
+  background-image: none !important;
+  background-color: white;
+  font-size: 14px;  
+}
+a, header, h2, h3, h1 {
+  color: black !important;
+}
+header, .info, .general {
+  border: none;
+  box-shadow: none;
+}
+.reference a, .nth li:nth-child(5n),.nth li:nth-child(6n) {
+  display: none;
+}
+}
+@media (max-device-width: 500px){
+.flex {
+  flex-direction: column;
+  align-items: flex-start;
+}
+body, a, header{
+  font-size: 70%;
+}
+ h2, h3 {
+  font-size: 170%;
+ }
+img {
+ display: none;
+}
+.info {
+  width: 90%;
+  margin: 0;
+  padding-left: 5px;
+}
+.general {
+  padding-left: 5px;
+  width: 90%;
+  margin: 0;
+}
+}
+@media only screen and (max-width: 700px) {
+.flex {
+  flex-direction: column;
+  align-items: flex-start;
+}
+body, a, header{
+  font-size: 70%;
+}
+ h2, h3 {
+  font-size: 170%;
+ }
+img {
+ display: none;
+}
+.info {
+  width: 90%;
+  margin: 0;
+  padding-left: 5px;
+}
+.general {
+  padding-left: 5px;
+  width: 90%;
+  margin: 0;
+}
+}
+   </style>
+ </head>
+ <body>
+ 	<header>
+ 		<h1>Alexander Kakhanovich</h1>
+ 		<h3>front-end developer</h3>
+ 	</header>
+ 	<section class="about_me">
+ 		<article class="me flex">
+ 			<div class="general">
+ 				<img alt="me" src="http://upload.akusherstvo.ru/images/967952.jpg"/>
+ 				<h3>General information</h3>
+ 				<ul>
+ 					<li>Date of birth - 15/10/1993</li>
+ 					<li>Place of birth - Belarus</li>
+ 				</ul>
+ 				<h3>Contact Information</h3>
+ 				<ul class="nth">
+ 					<li>Minsk City</li>
+ 					<li>Mobile numbers:</li>
+	 				<ol>
+	  					<li><a href="tel:+375(29) 259 53 76" value="+375(29) 259 53 76" target="_blank" title="MTC">+375(29) 259 53 76</a></li>
+	  					<li><a href="tel:+375(29) 151 77 41" value="+375(29) 151 77 41" target="_blank" title="Velcom">+375(29) 151 77 41</a></li>
+					</ol>
+ 					<li><a href="mailto:TheWitcher.93@tut.by" target="_blank" style="">TheWitcher.93@tut.by</a></li>
+ 					<li><a href="https://www.linkedin.com/in/alexander-kakhanovich-820022117" target="_blank">linkedIn</a></li>
+ 					<li><a href="skype:DanteWitcher?call">DanteWitcher(Skype call)</a></li>
+ 				</ul>
+          <h3 class="reference"><a href="https://github.com/DanteWitcher" target="_blank">GitHub</a></h3>
+ 			</div>
+ 			<div class="info">
+ 				<h2>Information:</h2>
+ 				<div class="me">
+ 					<h3>About me:</h3>
+ 					<p>
+            I'm student in Belarusian State University of Informatics and Radioelectronics 2011 - 2016; Faculty of Information Technologies. My hobbies are soccer, playing the guitar, swimming, drawing, and also I like studying and getting new knowledge. No bad habits.
+          </p>
+ 				</div>
+ 				<div class="skills">
+ 					<h3>Skills:</h3>
+ 					<p>
+          I studied HTML, CSS, JavaScript, know bases of jQuery, Ajax, JSON, XML. 
+          I have good knowledge JavaSE, SQL by SUBD MySQL, and principles OOP. For me, career of web-developer gives me many ways for realization my interests, and creatively to do my work, this work include knowledge in different spheres.
+        </p>
+ 				</div>
+ 				<div class="qualities">
+ 					<h3>Qualities:</h3>
+ 					<p>
+          Diligent, hardworking and highly-organized, ability to work under pressure, friendly anda sociable. Pay attention to all the details, and like to be sure that everything is just right.
+          </p>
+ 				</div>
+ 				<div class="experience">
+ 					<h3>Experience:</h3>
+ 					<p>
+            I graduated course of web-developer in LeverX.
+            Developed modern Web application using cutting-edge standards and approaches;
+            Used SAPUI5, a fast-growing SAP framework based on JavaScript and HTML5 standards;
+            Consumed OData (RESTful based) web-services;
+            Created unit and integrated tests using popular JavaScript testing tools/frameworks;
+            Implemented the project by framework Open UI and using jQuery, Ajax, JSON, API in the project. 
+          </p>
+        <div>
+        <div class="plans">
+          <h3>
+            What I'm planning to get from "The School of development interfaces in Minsk"
+          </h3>
+          <p>
+            I'm planning to improve my knowledge about web-development, and then to consolidate knowledge practically and to use it. Studying: new frameworks, the solution of certain tasks; developing of interfaces, working in a team, to approve and to express oneself and finally getting a work.
+          </p>
+        </div>
+      </div>
+ 		</article>
+ 	</section>
+ 	<footer></footer>
+ </body>
+</html>
